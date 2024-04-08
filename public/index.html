@@ -34,40 +34,35 @@
   </nav>
 </header>
 
-<section id="about">
-  <h2>О нас</h2>
-  <p>Здесь вы можете рассказать о вашей компании и услугах.</p>
-</section>
+<div class="container">
+  <section id="info">
+    <h1>Название вашей компании</h1>
+    <p>Описание компании</p>
+  </section>
 
-<section id="portfolio">
-  <h2>Портфолио</h2>
+  <section id="portfolio">
+    <h2>Портфолио</h2>
+    <!-- Добавьте изображения, видео или графику вашего портфолио -->
+  </section>
 
-</section>
+  <section id="contact">
+    <h2>Контакты</h2>
+    <form id="contactForm" action="/contact" method="POST">
+      <label>
+        <input type="text" name="name" placeholder="Имя" required>
+      </label>
+      <label>
+        <input type="email" name="email" placeholder="Email" required>
+      </label>
+      <label>
+        <textarea name="message" placeholder="Сообщение" required></textarea>
+      </label>
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+</div>
 
-<section id="contact">
-  <h2>Контакты</h2>
-  <p>Свяжитесь с нами:</p>
-  <form id="contactForm">
-    <label>
-      <input type="text" name="name" placeholder="Имя" required>
-    </label>
-    <label>
-      <input type="email" name="email" placeholder="Email" required>
-    </label>
-    <label>
-      <textarea name="message" placeholder="Сообщение" required></textarea>
-    </label>
-    <button type="submit">Отправить</button>
-  </form>
-</section>
-
-<footer>
-  <p>&copy; 2024 Компания по съемке видео и фотографии</p>
-</footer>
-
-
-
-  <script type="module" src="js/app.js"></script>
+<script src="script.js"></script>
 
 </body>
 
