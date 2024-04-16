@@ -21,14 +21,14 @@ app.use(express.static('public'));
 
 app.post('/contact', urlencodedParser, function (req, res) {
   const { Name, Email, Message } = req.body;
-  console.log(req.body);
+
 
   if (Name === undefined || Email === undefined || Message === undefined) {
     return res.status(400).send('Не все данные были предоставлены.');
   }
 
   const text = `Новое сообщение от ${Name} (${Email}):\n${Message}`;
-  console.log(text + " — Server");
+
 
   bot.sendMessage(chatId, text)
     .then(() => {
@@ -40,6 +40,6 @@ app.post('/contact', urlencodedParser, function (req, res) {
     });
 });
 
-app.listen(port, () => {
+app.listen(port, '0.0.0.0',() => {
   console.log(`Сервер запущен на порту ${port}`);
 });
