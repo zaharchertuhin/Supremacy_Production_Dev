@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "LemonTuesday";
+  src: url("../font/Lemon Tuesday.otf") format("OpenType");
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -8,7 +16,7 @@ body {
 }
 
 header {
-
+ font-family: LemonTuesday, sans-serif;
  background-image: linear-gradient(to top, transparent, rgb(149 7 64 / 70%));
   padding: 5px;
   display: flex;
@@ -21,7 +29,8 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 10px;
+  margin-right: 40px;
+  font-size: 28px;
 }
 
 section {
@@ -80,7 +89,9 @@ nav a{
   font-size: 40px;
 }
 
-
+h2{
+  font-size: 72px;
+}
 
 .marquee-container {
   width: 100%;
@@ -177,17 +188,19 @@ button:hover {
   background-color: #C3073F;
 }
 
-.teacher-card{
+.team-member-card{
   display: flex;
-  max-width: 400px;
+  max-width: 440px;
   background-color: #950740;
   border-radius: 10px;
+  width: 100%;
 }
 
-.teacher-card img{
+.team-member-card img{
   width: 180px;
   height: 380px;
   margin: 20px;
+  object-fit: cover;
 }
 
 #info{
@@ -207,10 +220,24 @@ button:hover {
 }
 
 .swiper-wrapper{
+  margin: auto;
+  max-width: calc(460px * 3);
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(440px, 420px));
+  grid-column-gap: 18px;
+  grid-row-gap: 20px;
   justify-items: center;
+}
+
+.info-container{
+  max-width: 1380px;
+  margin: auto;
+  text-align: center;
+  font-size: 36px;
+}
+
+.info-container li{
+  list-style-type: none;
 }
 
 
@@ -339,29 +366,27 @@ button:hover {
   line-height: 1.5;
 }
 
-.photo-container {
-  display: flex;
-  flex-wrap: wrap;
+/*
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+*/
+
+.video__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
   justify-content: center;
-  gap: 20px;
+  max-width: 1380px;
+  margin: auto;
 }
 
-.photo {
-  max-width: 200px;
-  max-height: 200px;
-  border-radius: 50%; /* Делаем круглыми по умолчанию */
-  overflow: hidden;
-  transition: transform 0.3s ease;
+.video__content li {
+  list-style-type: none;
 }
 
-.square {
-  border-radius: 8px; /* Делаем квадратными */
-}
-
-.round{
-  border-radius: 50%;
-}
-
-.photo:hover {
-  transform: scale(1.1); /* Увеличение при наведении */
+.video__content img{
+  max-width: 440px;
 }

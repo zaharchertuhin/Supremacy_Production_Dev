@@ -23,7 +23,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
 
-
+  <link rel="stylesheet" href="videotube/videotube.min.css">
+  <script src="videotube/videotube.min.js"></script>
 
 <!--  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">-->
 
@@ -39,7 +40,7 @@
   <div class="navigation"><nav>
     <ul>
 
-      <li><a href="#about">О нас</a></li>
+      <li><a href="">Аренда</a></li>
       <li><a href="#portfolio">Портфолио</a></li>
       <li><a href="#contact">Контакты</a></li>
     </ul>
@@ -51,16 +52,33 @@
   <section id="info">
     <div>
     <h1>SUPREMACY Production</h1>
-    <p>Создание контента полного цикла.</p>
+    <p>Производсво контента полного цикла.</p>
     <br>
 </div>
   </section>
 
 
-  <section id="#about">
+  <section id="about">
     <h2>О нас</h2>
 
-    <div class="ring-container">
+    <div class="info-container">
+      <p>Мы собрали креативную команду профессионалов, горящих своим делом.
+        <br>
+        Ежедневно мы развиваемся и улучшаем наши навыки, чтобы обеспечить вас высоким качеством производства контента.
+        <br>
+        Мы предоставляем услуги создания видео полного цикла. от разработки идеи и сценария до полной реализации проекта.
+        <br>
+      </p>
+        <ul>В нашу специализацию входят:
+          <li>Рекламные ролики</li>
+          <li>Проморолики</li>
+          <li>Музыкальные клипы</li>
+          <li>Концертные съемки</li>
+    </ul>
+
+    </div>
+
+    <!--<div class="ring-container">
       <div class="ring ring-large">
         <div class="ring-text">Some text</div>
       </div>
@@ -70,7 +88,66 @@
       <div class="ring ring-small">
         <div class="ring-text">Some text</div>
       </div>
-    </div>
+    </div>-->
+
+  </section>
+
+  <section id="portfolio">
+    <h2>Портфолио</h2>
+
+      <div class="vide-container">
+        <ul class="video__content">
+          <li>
+            <a href="https://youtu.be/ES8uSxB3Tnk" class="card__link tube">
+              <img src="img/test_image.jpg" alt="Test">
+            </a>
+
+            <h3>Название 1</h3>
+          </li>
+
+          <li>
+            <a href="https://youtu.be/ES8uSxB3Tnk" class="card__link tube">
+              <img src="img/test_image.jpg" alt="Test">
+            </a>
+
+            <h3>Название 1</h3>
+          </li>
+
+          <li>
+            <a href="https://youtu.be/ES8uSxB3Tnk" class="card__link tube">
+              <img src="img/test_image.jpg" alt="Test">
+            </a>
+
+            <h3>Название 1</h3>
+          </li>
+
+          <li>
+            <a href="https://youtu.be/ES8uSxB3Tnk" class="card__link tube">
+              <img src="img/test_image.jpg" alt="Test">
+            </a>
+
+            <h3>Название 1</h3>
+          </li>
+
+          <li>
+            <a href="https://youtu.be/ES8uSxB3Tnk" class="card__link tube">
+              <img src="img/test_image.jpg" alt="Test">
+            </a>
+
+            <h3>Название 1</h3>
+          </li>
+
+          <li>
+            <a href="https://youtu.be/ES8uSxB3Tnk" class="card__link tube">
+              <img src="img/test_image.jpg" alt="Test">
+            </a>
+
+            <h3>Название 1</h3>
+          </li>
+
+
+        </ul>
+      </div>
 
   </section>
 
@@ -85,49 +162,74 @@
   </div>
 
 
-  <section id="portfolio">
+  <section id="team">
     <h2>Команда</h2>
 
-   <!-- <div class="teacher-carousel">
-      <div class="swiper-container">-->
         <div class="swiper-wrapper">
-          <!-- Карточка преподавателя -->
 
-            <div class="teacher-card">
-              <img src="teacher1.jpg" alt="Участник1">
-              <div class="teacher-info">
-                <h3>Имя 1</h3>
-                <p>Описание  1. Здесь вы можете описать все что вам надо.</p>
+            <div class="team-member-card">
+              <img src="img/profiles/MaksimSobolev.JPG" alt="Максим соболев"  style="object-position: 55%;">
+              <div class="team-member-info">
+                <h3>Максим соболев</h3>
+                <p>
+                  Режиссер - постановщик
+                  Руководитель продакшена</p>
               </div>
             </div>
 
           <!-- Другие карточки преподавателей добавляются аналогичным образом -->
 
-            <div class="teacher-card">
-              <img src="teacher2.jpg" alt="Участник 2">
-              <div class="teacher-info">
-                <h3>Имя Участника 2</h3>
-                <p>Описание преподавателя 2. Здесь вы можете описать все что вам надо.</p>
+            <div class="team-member-card">
+              <img src="img/profiles/AnnaTarasova.jpg" alt="Анна Тарасова" style="object-position:59%;">
+              <div class="team-member-info">
+                <h3>Анна Тарасова</h3>
+                <p>Исполнительный продюсер, второй режиссер, фокус-пуллер</p>
               </div>
             </div>
 
 
-            <div class="teacher-card">
-              <img src="teacher2.jpg" alt="Участник 2">
-              <div class="teacher-info">
-                <h3>Имя Участника 2</h3>
-                <p>Описание преподавателя 2. Здесь вы можете описать все что вам надо.</p>
+            <div class="team-member-card">
+              <img src="img/profiles/DenisNenastin.jpg" alt="Денис Ненастин" style="object-position: 60%;">
+              <div class="team-member-info">
+                <h3>Денис Ненастин</h3>
+                <p>Оператор постановщик, осветитель, монтажер</p>
               </div>
             </div>
 
 
-            <div class="teacher-card">
-              <img src="teacher2.jpg" alt="Участник 2">
-              <div class="teacher-info">
-                <h3>Имя Участника 2</h3>
-                <p>Описание преподавателя 2. Здесь вы можете описать все что вам надо.</p>
+            <div class="team-member-card">
+              <img src="img/profiles/VladislavGuschin.jpg" alt="Владислав Гущин" style="object-position: 100%;">
+              <div class="team-member-info">
+                <h3>Владислав Гущин</h3>
+                <p>Коммерческий директор,
+                  Оператор постановщик, монтажер</p>
               </div>
             </div>
+
+          <div class="team-member-card">
+            <img src="img/profiles/OlesyaPankova.jpg" alt="Олеся Панькова" style="object-position: 66%;">
+            <div class="team-member-info">
+              <h3>Олеся Панькова</h3>
+              <p>Визажист,
+                модель</p>
+            </div>
+          </div>
+
+          <div class="team-member-card">
+            <img src="img/profiles/AlyonaFilipova.JPG" alt="Алена Филиппова" style="object-position: 45%;">
+            <div class="team-member-info">
+              <h3>Алена Филиппова</h3>
+              <p>художник по костюмам</p>
+            </div>
+          </div>
+
+          <div class="team-member-card">
+            <img src="img/profiles/KirillGorshenichev.jpg" alt="Кирилл Горшенничев" style="object-position: 56%;">
+            <div class="team-member-info">
+              <h3>Кирилл Горшенничев</h3>
+              <p>Осветитель, Bestboy</p>
+            </div>
+          </div>
 
         </div>
 
@@ -182,7 +284,7 @@
     </div>
   </section>
 
-  <section id="reviews">
+  <!--<section id="reviews">
     <h2 class="reviews-title">Отзывы о нас</h2>
     <div class="reviews-container">
 
@@ -215,22 +317,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 
-  <section id="photo">
-    <div class="photo-container">
-      <img src="photo1.jpg" alt="Фото 1" class="photo round">
-      <img src="photo2.jpg" alt="Фото 2" class="photo square">
-      <img src="photo3.jpg" alt="Фото 3" class="photo round">
-      <img src="photo4.jpg" alt="Фото 4" class="photo square">
-      <img src="photo5.jpg" alt="Фото 5" class="photo round">
-      <img src="photo6.jpg" alt="Фото 6" class="photo square">
-      <img src="photo7.jpg" alt="Фото 7" class="photo round">
-      <img src="photo8.jpg" alt="Фото 8" class="photo square">
-      <img src="photo9.jpg" alt="Фото 9" class="photo round">
-      <img src="photo10.jpg" alt="Фото 10" class="photo square">
-    </div>
-  </section>
+
 
   <section id="contact">
 
@@ -256,7 +345,11 @@
   </section>
 </div>
 
+
+<!--<script src="https://www.youtube.com/iframe_api"></script>-->
+
 <script src="js/script.js"></script>
+
 
 </body>
 
