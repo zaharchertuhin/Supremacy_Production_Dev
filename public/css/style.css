@@ -157,6 +157,7 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
+  width: 100%;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #4E4E50;
@@ -194,6 +195,8 @@ button:hover {
   background-color: #950740;
   border-radius: 10px;
   width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .team-member-card img{
@@ -201,6 +204,11 @@ button:hover {
   height: 380px;
   margin: 20px;
   object-fit: cover;
+}
+
+.team-member-card:hover {
+  transform: scale(1.05); /* Увеличение при наведении */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Увеличенная тень при наведении */
 }
 
 #info{
@@ -233,7 +241,7 @@ button:hover {
   max-width: 1380px;
   margin: auto;
   text-align: center;
-  font-size: 36px;
+  font-size: 32px;
 }
 
 .info-container li{
@@ -283,8 +291,12 @@ button:hover {
   font-size: 16px;
 }
 
+#partners .owl-stage-outer{
+  max-width: 1380px;
+  margin: auto;
+}
+
 #partners{
-  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -293,6 +305,7 @@ button:hover {
 }
 
 .partner-logos {
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

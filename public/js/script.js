@@ -74,6 +74,7 @@ const repeatedText = (new Array(repeatCount)).fill(marqueeText.textContent).join
 marqueeText.textContent = repeatedText + ' | ';
 marqueeText2.textContent = repeatedText;
 
+/*
 
 let minSize=150,
   el=document.querySelector('#info'),
@@ -89,4 +90,5 @@ document.addEventListener('scroll',()=>{
     value=height.el/percent
   el.style.height=height.el-value+minSize+'px'
 })
+*/
 
