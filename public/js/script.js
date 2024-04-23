@@ -74,6 +74,17 @@ const repeatedText = (new Array(repeatCount)).fill(marqueeText.textContent).join
 marqueeText.textContent = repeatedText + ' | ';
 marqueeText2.textContent = repeatedText;
 
+document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('scroll', function() {
+    const cameraImg = document.querySelector('.camera-img');
+    const scrollPosition = window.scrollY;
+
+    // Задаем угол поворота картинки кинокамеры в зависимости от скролла страницы
+    cameraImg.style.transform = `rotate(${scrollPosition / 10 - 110}deg)`;
+  });
+});
+
+
 /*
 
 let minSize=150,

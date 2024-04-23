@@ -3,21 +3,66 @@
   src: url("../font/Lemon Tuesday.otf") format("OpenType");
 }
 
+@font-face {
+  font-family: "Ponter";
+  src: url("../font/Ponter Alt.ttf") format("TrueType");
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Ponter, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #1A1A1D;
   color: white;
+
+
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 50vh;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background: url('../img/logo.png') bottom right no-repeat;
+  background-size: auto;
+  opacity: 0.8; /* прозрачность для черного фона */
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 30vh;
+  left: -60vh;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: url('../img/logo.png') top left no-repeat;
+
+
+  background-size: auto;
+  opacity: 0.8; /* прозрачность для черного фона */
+}
+
+/* Адаптивные стили для многослойного фона */
+@media (max-width: 768px) {
+  body::before {
+    background-size: cover;
+  }
+  body::after {
+    background-size: cover;
+  }
 }
 
 header {
- font-family: LemonTuesday, sans-serif;
- background-image: linear-gradient(to top, transparent, rgb(149 7 64 / 70%));
+  font-family: LemonTuesday, sans-serif;
+  background-image: linear-gradient(to top, transparent, rgb(149 7 64 / 70%));
   padding: 5px;
   display: flex;
 }
@@ -45,22 +90,28 @@ footer {
   color: #fff;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-nav a{
+nav a {
   color: white;
 }
 
-.navigation{
+h3 {
+  letter-spacing: 2px;
+  font-size: 28px;
+  margin: 0;
+}
+
+.navigation {
   display: flex;
   width: 100%;
   justify-content: flex-end;
   align-items: center;
 }
 
-.Hlogo{
+.Hlogo {
   width: 64px;
 }
 
@@ -79,17 +130,17 @@ nav a{
   transform: translateY(-74px);
 }
 
-#info h1{
+#info h1 {
   margin: 100px 0 0 100px;
   font-size: 72px;
 }
 
-#info p{
+#info p {
   margin: 0 0 0 100px;
   font-size: 40px;
 }
 
-h2{
+h2 {
   font-size: 72px;
 }
 
@@ -97,7 +148,7 @@ h2{
   width: 100%;
   overflow: hidden;
   display: flex;
-  background-color: #6F2232;
+  /*background-color: #6F2232;*/
   padding: 10px 0 10px 0;
   border: white 5px;
 }
@@ -124,17 +175,17 @@ h2{
   background-color: #4E4E50;
   padding: 40px;
   border-radius: 8px;
-  width: 400px;
+  width: 500px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
   text-align: center;
   margin-bottom: 20px;
-  color: #C3073F;
+  /*color: #C3073F;*/
 }
 
-.contact-form-container{
+.contact-form-container {
   margin: auto;
 }
 
@@ -189,29 +240,135 @@ button:hover {
   background-color: #C3073F;
 }
 
-.team-member-card{
+.team-member-card {
   display: flex;
-  max-width: 440px;
-  background-color: #950740;
+  padding: 20px;
+  max-width: 380px;
+  /*background-color: #950740;*/
   border-radius: 10px;
   width: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-position: center;
+  min-height: 400px;
+  background-size: cover;
+
 }
 
-.team-member-card img{
+.swiper-wrapper {
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(440px, 420px));
+  grid-column-gap: 18px;
+  grid-row-gap: 20px;
+  justify-items: center;
+}
+
+@media (min-width: 600px) {
+  .swiper-wrapper {
+    max-width: calc(460px * 1);
+  }
+}
+
+/* Медиа-запрос для устройств среднего размера (например, планшетов) */
+@media (min-width: 768px) {
+
+
+  .swiper-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr)); /* Изменяем ширину колонок в swiper-wrapper */
+
+  }
+}
+
+
+/* Медиа-запрос для настольных компьютеров и больших экранов (ширина экрана от 992px и выше) */
+@media (min-width: 992px) {
+
+  .swiper-wrapper {
+    max-width: calc(460px * 2); /* Увеличиваем максимальную ширину swiper-wrapper */
+    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr)); /* Изменяем ширину колонок в swiper-wrapper */
+
+  }
+}
+
+@media (min-width: 1480px) {
+  .swiper-wrapper {
+    max-width: calc(460px * 3);
+  }
+}
+
+.team-member-card:nth-child(1) {
+  background-image: linear-gradient(to bottom, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to left, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to right, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to top, black, transparent, transparent, transparent, transparent, transparent),
+  url('../img/profiles/MaksimSobolev.JPG');
+}
+
+.team-member-card:nth-child(2) {
+  background-image: linear-gradient(to bottom, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to left, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to right, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to top, black, transparent, transparent, transparent, transparent, transparent),
+  url('../img/profiles/AnnaTarasova.jpg');
+}
+
+.team-member-card:nth-child(3) {
+  background-image: linear-gradient(to bottom, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to left, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to right, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to top, black, transparent, transparent, transparent, transparent, transparent),
+  url('../img/profiles/DenisNenastin.jpg');
+}
+
+.team-member-card:nth-child(4) {
+  background-image: linear-gradient(to bottom, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to left, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to right, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to top, black, transparent, transparent, transparent, transparent, transparent),
+  url('../img/profiles/VladislavGuschin.jpg');
+  background-position: top;
+}
+
+.team-member-card:nth-child(5) {
+  background-image: linear-gradient(to bottom, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to left, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to right, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to top, black, transparent, transparent, transparent, transparent, transparent),
+  url('../img/profiles/OlesyaPankova.jpg');
+}
+
+.team-member-card:nth-child(6) {
+  background-image: linear-gradient(to bottom, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to left, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to right, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to top, black, transparent, transparent, transparent, transparent, transparent),
+  url('../img/profiles/AlyonaFilipova.JPG');
+  background-position: top;
+}
+
+.team-member-card:nth-child(7) {
+  background-image: linear-gradient(to bottom, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to left, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to right, black, transparent, transparent, transparent, transparent, transparent),
+  linear-gradient(to top, black, transparent, transparent, transparent, transparent, transparent),
+  url('../img/profiles/KirillGorshenichev.jpg');
+}
+
+/*.team-member-card img{
   width: 180px;
   height: 380px;
   margin: 20px;
   object-fit: cover;
-}
+}*/
 
 .team-member-card:hover {
   transform: scale(1.05); /* Увеличение при наведении */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Увеличенная тень при наведении */
 }
 
-#info{
+#info {
 
   width: 100%;
   height: 100vh; /* Initial full screen height */
@@ -227,24 +384,32 @@ button:hover {
   height: calc(100vh - 33.33vh); /* Shrink to 2/3 of full screen height */
 }
 
-.swiper-wrapper{
-  margin: auto;
-  max-width: calc(460px * 3);
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(440px, 420px));
-  grid-column-gap: 18px;
-  grid-row-gap: 20px;
-  justify-items: center;
+
+#about .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
 }
 
-.info-container{
+.camera-section {
+  flex: 0 0 auto;
+}
+
+.camera-img {
+  max-width: 200px;
+  transition: transform 0.5s ease;
+}
+
+
+.info-container {
   max-width: 1380px;
   margin: auto;
   text-align: center;
   font-size: 32px;
 }
 
-.info-container li{
+.info-container li {
   list-style-type: none;
 }
 
@@ -291,12 +456,12 @@ button:hover {
   font-size: 16px;
 }
 
-#partners .owl-stage-outer{
+#partners .owl-stage-outer {
   max-width: 1380px;
   margin: auto;
 }
 
-#partners{
+#partners {
   justify-content: center;
   align-items: center;
 
@@ -338,7 +503,7 @@ button:hover {
 
 }
 
-#reviews{
+#reviews {
   font-family: Arial, sans-serif;
   background-color: #222; /* Темный фон */
   color: #fff; /* Белый текст */
@@ -398,8 +563,41 @@ button:hover {
 
 .video__content li {
   list-style-type: none;
-}
-
-.video__content img{
   max-width: 440px;
 }
+
+.video__content img {
+  max-width: 440px;
+}
+
+
+@media (max-width: 992px) {
+  .video__content {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: calc(440px * 1);
+  }
+
+
+}
+
+/* Медиа-запрос для устройств с шириной экрана от 768px до 1200px (например, планшеты и средние экраны) */
+@media (min-width: 992px) {
+  .video__content {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: calc(440px * 2);
+  }
+}
+
+/* Медиа-запрос для устройств с шириной экрана более 1200px (например, ноутбуки и большие экраны) */
+@media (min-width: 1450px) {
+  .video__content {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: calc(440px * 3);
+  }
+
+  .video__content li {
+
+  }
+}
+
+
