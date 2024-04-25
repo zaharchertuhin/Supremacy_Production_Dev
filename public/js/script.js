@@ -80,7 +80,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const scrollPosition = window.scrollY;
 
     // Задаем угол поворота картинки кинокамеры в зависимости от скролла страницы
-    cameraImg.style.transform = `rotate(${scrollPosition / 10 - 110}deg)`;
+    cameraImg.style.transform = `rotate(${scrollPosition / 20 - 50}deg)`;
+  });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const link1 = document.querySelector('#rent')
+  const link2 = document.querySelector('#portf')
+  const link3 = document.querySelector('#cont')
+  const menu = document.querySelector('.menu-items');
+  link1.addEventListener('click', function() {
+    document.getElementById("check").checked = false;
+    menu.style.transform = `transform: translateX(-150%);`;
+  });
+  link2.addEventListener('click', function() {
+    document.getElementById("check").checked = false;
+    menu.style.transform = `translateX(-150%);`;
+
+  });
+  link3.addEventListener('click', function() {
+    document.getElementById("check").checked = false;
+    menu.style.transform = `translateX(-150%);`;
+
   });
 });
 

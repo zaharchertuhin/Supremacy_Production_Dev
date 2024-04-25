@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SUPREMACY</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/info.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/team.css">
+  <link rel="stylesheet" href="css/partners.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/header.css">
+
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -39,25 +47,44 @@
 <body>
 
 <header class="header">
-  <a href="#info">
+  <a class="main" href="#info">
     <img src="img/logo.png" alt="Logo" class="Hlogo">
   </a>
-  <div class="navigation">
+
+  <nav class="navbar">
+    <div class="navbar-container container">
+      <input type="checkbox" name="" id="check">
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul class="menu-items">
+        <li><a id="rent" href="rent.html">Аренда</a></li>
+        <li><a id="portf" href="#portfolio">Портфолио</a></li>
+        <li><a id="cont" href="#contact">Контакты</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <!--<div class="navigation">
     <nav>
-      <ul>
+      <ul class="menu">
         <li><a href="rent.html">Аренда</a></li>
         <li><a href="#portfolio">Портфолио</a></li>
         <li><a href="#contact">Контакты</a></li>
       </ul>
     </nav>
-  </div>
+    <button class="hamburger-menu">&#9776;</button> &lt;!&ndash; Кнопка меню-гамбургер &ndash;&gt;
+  </div>-->
 </header>
 
 <div class="container">
   <section id="info">
     <div>
       <h1>SUPREMACY Production</h1>
-      <p>Производсво контента полного цикла.</p>
+      <p>Производство контента полного цикла</p>
       <br>
     </div>
   </section>
@@ -71,17 +98,13 @@
       <div class="camera-section">
         <img src="/img/cinema.png" alt="Кинокамера" class="camera-img">
       </div>
-
-
-    <div class="info-container">
-      <p>Мы собрали креативную команду профессионалов, горящих своим делом.
-        <br>
-        Ежедневно мы развиваемся и улучшаем наши навыки, чтобы обеспечить вас высоким качеством производства контента.
-        <br>
-        Мы предоставляем услуги создания видео полного цикла. от разработки идеи и сценария до полной реализации
-        проекта.
-        <br>
-      </p>
+      <div class="info-container">
+        <p>Мы собрали креативную команду профессионалов, горящих своим делом.</p>
+        <p>Ежедневно мы развиваемся и улучшаем наши навыки, чтобы обеспечить вас высоким качеством производства
+          контента.</p>
+        <p>Мы предоставляем услуги создания видео полного цикла. от разработки идеи и сценария до полной реализации
+          проекта.
+        </p>
       <ul>В нашу специализацию входят:
         <li>Рекламные ролики</li>
         <li>Проморолики</li>
@@ -102,7 +125,7 @@
         <div class="ring-text">Some text</div>
       </div>
     </div>-->
-
+    </div>
   </section>
 
   <section id="portfolio">
@@ -114,7 +137,6 @@
           <a href="https://youtu.be/ES8uSxB3Tnk" class="card__link tube">
             <img src="img/test_image.jpg" alt="Test">
           </a>
-
           <h3>Название 1</h3>
         </li>
 
@@ -122,7 +144,6 @@
           <a href="https://youtu.be/ES8uSxB3Tnk" class="card__link tube">
             <img src="img/test_image.jpg" alt="Test">
           </a>
-
           <h3>Название 1</h3>
         </li>
 
@@ -130,7 +151,6 @@
           <a href="https://youtu.be/ES8uSxB3Tnk" class="card__link tube">
             <img src="img/test_image.jpg" alt="Test">
           </a>
-
           <h3>Название 1</h3>
         </li>
 
@@ -138,7 +158,6 @@
           <a href="https://youtu.be/ES8uSxB3Tnk" class="card__link tube">
             <img src="img/test_image.jpg" alt="Test">
           </a>
-
           <h3>Название 1</h3>
         </li>
 
@@ -146,7 +165,6 @@
           <a href="https://youtu.be/ES8uSxB3Tnk" class="card__link tube">
             <img src="img/test_image.jpg" alt="Test">
           </a>
-
           <h3>Название 1</h3>
         </li>
 
@@ -154,36 +172,25 @@
           <a href="https://youtu.be/ES8uSxB3Tnk" class="card__link tube">
             <img src="img/test_image.jpg" alt="Test">
           </a>
-
           <h3>Название 1</h3>
-
-
         </li>
-
-
       </ul>
     </div>
-
   </section>
 
   <div class="marquee-container">
     <div class="marquee">
       <span class="marquee-text">Бегущая строка</span>
-
     </div>
     <div class="marquee">
       <span class="marquee-text2">Бегущая строка</span>
     </div>
   </div>
 
-
   <section id="team">
     <h2>Команда</h2>
-
     <div class="swiper-wrapper">
-
       <div class="team-member-card">
-       <!-- <img src="img/profiles/MaksimSobolev.JPG" alt="Максим соболев" style="object-position: 55%;">-->
         <div class="team-member-info">
           <h3>Максим соболев</h3>
           <p>Режиссер - постановщик</p>
@@ -191,10 +198,7 @@
         </div>
       </div>
 
-      <!-- Другие карточки преподавателей добавляются аналогичным образом -->
-
       <div class="team-member-card">
-        <!--<img src="img/profiles/AnnaTarasova.jpg" alt="Анна Тарасова" style="object-position:59%;">-->
         <div class="team-member-info">
           <h3>Анна Тарасова</h3>
           <p>Исполнительный продюсер</p>
@@ -203,9 +207,7 @@
         </div>
       </div>
 
-
       <div class="team-member-card">
-        <!--<img src="img/profiles/DenisNenastin.jpg" alt="Денис Ненастин" style="object-position: 60%;">-->
         <div class="team-member-info">
           <h3>Денис Ненастин</h3>
           <p>Оператор постановщик</p>
@@ -214,9 +216,7 @@
         </div>
       </div>
 
-
       <div class="team-member-card">
-      <!--  <img src="img/profiles/VladislavGuschin.jpg" alt="Владислав Гущин" style="object-position: 100%;">-->
         <div class="team-member-info">
           <h3>Владислав Гущин</h3>
           <p>Коммерческий директор</p>
@@ -226,7 +226,6 @@
       </div>
 
       <div class="team-member-card">
-       <!-- <img src="img/profiles/OlesyaPankova.jpg" alt="Олеся Панькова" style="object-position: 66%;">-->
         <div class="team-member-info">
           <h3>Олеся Панькова</h3>
           <p>Визажист</p>
@@ -235,76 +234,24 @@
       </div>
 
       <div class="team-member-card">
-        <!--<img src="img/profiles/AlyonaFilipova.JPG" alt="Алена Филиппова" style="object-position: 45%;">-->
         <div class="team-member-info">
           <h3>Алена Филиппова</h3>
           <p>художник по костюмам</p>
         </div>
       </div>
 
-
       <div class="team-member-card">
-        <!--<img src="img/profiles/KirillGorshenichev.jpg" alt="Кирилл Горшенничев" style="object-position: 56%;">-->
         <div class="team-member-info">
           <h3>Кирилл Горшенничев</h3>
           <p>Осветитель</p>
           <p>Bestboy</p>
         </div>
       </div>
-
     </div>
-
-    <!--<div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>-->
-
-
-    <!-- Подключаем библиотеку Swiper JS -->
-    <!--<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    &lt;!&ndash; Инициализируем карусель с помощью JavaScript &ndash;&gt;
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-    </script>-->
-
-
   </section>
 
   <section id="partners">
     <h2>Партнеры</h2>
-    <!--<div class="partner-logos">
-      <div class="logo">
-        <img src="img/test_image.jpg" alt="Partner Logo">
-      </div>
-      <div class="logo">
-        <img src="img/test_image.jpg" alt="Partner Logo">
-      </div>
-      <div class="logo">
-        <img src="img/test_image.jpg" alt="Partner Logo">
-      </div>
-      <div class="logo">
-        <img src="img/test_image.jpg" alt="Partner Logo">
-      </div>
-      <div class="logo">
-        <img src="img/test_image.jpg" alt="Partner Logo">
-      </div>
-      <div class="logo">
-        <img src="img/test_image.jpg" alt="Partner Logo">
-      </div>
-      <div class="logo">
-        <img src="img/test_image.jpg" alt="Partner Logo">
-      </div>
-      <div class="logo">
-        <img src="img/test_image.jpg" alt="Partner Logo">
-      </div>
-    </div>-->
-
-
     <div class="owl-carousel">
       <div class="item">
         <div class="logo">
@@ -450,10 +397,7 @@
           <img src="img/test_image.jpg" alt="Partner Logo">
         </div>
       </div>
-
     </div>
-
-
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -461,70 +405,41 @@
     <script>
       $(document).ready(function(){
         $(".owl-carousel").owlCarousel({
-
-
           margin: 20,
           nav: true,
           dots: true,
-
           responsive:{
             0:{
+              items: 1
+            },
+            450:{
               items: 2
             },
-            600:{
+            588:{
+              items: 3
+            },
+            784:{
               items: 4
             },
-            1000:{
+            980:{
+              items: 5
+            },
+            1176:{
+              items: 6
+            },
+            1372:{
+              items: 7
+            },
+            1568:{
               items: 8
             }
           }
         });
       });
-
-
     </script>
-
-
   </section>
 
-  <!--<section id="reviews">
-    <h2 class="reviews-title">Отзывы о нас</h2>
-    <div class="reviews-container">
-
-      <div class="review">
-        <img src="person1.jpg" alt="Фото человека">
-        <div class="review-content">
-          <h3>Иван Иванов</h3>
-          <p>"Отличная компания! Быстрая и качественная работа."</p>
-        </div>
-      </div>
-      <div class="review">
-        <img src="person2.jpg" alt="Фото человека">
-        <div class="review-content">
-          <h3>Мария Петрова</h3>
-          <p>"Профессиональный подход и внимательное отношение к клиентам."</p>
-        </div>
-      </div>
-      <div class="review">
-        <img src="person3.jpg" alt="Фото человека">
-        <div class="review-content">
-          <h3>Алексей Сидоров</h3>
-          <p>"Очень доволен результатом! Рекомендую!"</p>
-        </div>
-      </div>
-      <div class="review">
-        <img src="person4.jpg" alt="Фото человека">
-        <div class="review-content">
-          <h3>Елена Николаева</h3>
-          <p>"Замечательный опыт сотрудничества. Спасибо!"</p>
-        </div>
-      </div>
-    </div>
-  </section>-->
-
-
   <section id="contact">
-
     <div class="contact-form-container">
       <h2>Обратная связь</h2>
       <form id="contactForm" action="/contact" method="POST" class="contact-form">
@@ -543,15 +458,15 @@
         <button type="submit">Отправить</button>
       </form>
     </div>
-
   </section>
 </div>
 
-
+<footer>
+  <p>Made by <a href="https://t.me/WIXBY">WIXBY</a></p>
+</footer>
 
 
 <script src="js/script.js"></script>
-
 
 </body>
 

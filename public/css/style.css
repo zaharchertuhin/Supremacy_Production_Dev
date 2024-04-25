@@ -10,16 +10,18 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
 }
 
 body {
+  width: 100%;
+  max-width: 100%;
   font-family: Ponter, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #1A1A1D;
   color: white;
-
-
 }
 
 body::before {
@@ -44,13 +46,10 @@ body::after {
   height: 100%;
   z-index: -1;
   background: url('../img/logo.png') top left no-repeat;
-
-
   background-size: auto;
-  opacity: 0.8; /* прозрачность для черного фона */
+  opacity: 0.8;
 }
 
-/* Адаптивные стили для многослойного фона */
 @media (max-width: 768px) {
   body::before {
     background-size: cover;
@@ -59,28 +58,30 @@ body::after {
     background-size: cover;
   }
 }
+@media (max-width: 992px) {
+  body::before {
+    display: none;
+  }
+  body::after {
+    display: none;
+  }
 
-header {
-  font-family: LemonTuesday, sans-serif;
-  background-image: linear-gradient(to top, transparent, rgb(149 7 64 / 70%));
-  padding: 5px;
-  display: flex;
-}
+  body{
+    background: url('../img/logo.png')fixed no-repeat, #1A1A1D ;
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
 
-nav ul li {
-  display: inline;
-  margin-right: 40px;
-  font-size: 28px;
+  }
 }
 
 section {
-  padding: 64px 20px;
+  padding: 30px 20px;
+  max-width: 100%;
+}
 
+@media (max-width: 768px) {
+  section {
+    /*max-width: calc(100vw - 60px);*/
+  }
 }
 
 footer {
@@ -94,54 +95,16 @@ a {
   text-decoration: none;
 }
 
-nav a {
-  color: white;
-}
-
 h3 {
   letter-spacing: 2px;
   font-size: 28px;
   margin: 0;
 }
 
-.navigation {
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.Hlogo {
-  width: 64px;
-}
-
-.header {
-
-  height: 64px;
-  z-index: 3;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  transition: transform .1s linear;
-}
-
-.header.hide {
-  transform: translateY(-74px);
-}
-
-#info h1 {
-  margin: 100px 0 0 100px;
-  font-size: 72px;
-}
-
-#info p {
-  margin: 0 0 0 100px;
-  font-size: 40px;
-}
-
 h2 {
   font-size: 72px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .marquee-container {
@@ -170,434 +133,47 @@ h2 {
     transform: translateX(-100%);
   }
 }
-
-.contact-form-container {
-  background-color: #4E4E50;
-  padding: 40px;
-  border-radius: 8px;
-  width: 500px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  /*color: #C3073F;*/
-}
-
-.contact-form-container {
-  margin: auto;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  font-size: 16px;
-  margin-bottom: 8px;
-}
-
-/* Общие стили для всех input-полей и textarea */
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #4E4E50;
-  border-bottom: 1px solid #6F2232;
-  border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.01); /* Прозрачный фон */
-  color: #FFFFFF;
-}
-
-/* Отступы для input-полей */
-input[type="text"],
-input[type="email"],
-textarea {
-  margin-bottom: 10px;
-}
-
-button {
-  padding: 12px 20px;
-  font-size: 16px;
-  background-color: #950740;
-  color: #FFFFFF;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #C3073F;
-}
-
-.team-member-card {
-  display: flex;
-  padding: 20px;
-  max-width: 380px;
-  /*background-color: #950740;*/
-  border-radius: 10px;
-  width: 100%;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-position: center;
-  min-height: 400px;
-  background-size: cover;
-
-}
-
-.swiper-wrapper {
-  margin: auto;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(440px, 420px));
-  grid-column-gap: 18px;
-  grid-row-gap: 20px;
-  justify-items: center;
-}
-
-@media (min-width: 600px) {
-  .swiper-wrapper {
-    max-width: calc(460px * 1);
-  }
-}
-
-/* Медиа-запрос для устройств среднего размера (например, планшетов) */
-@media (min-width: 768px) {
-
-
-  .swiper-wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr)); /* Изменяем ширину колонок в swiper-wrapper */
-
-  }
-}
-
-
-/* Медиа-запрос для настольных компьютеров и больших экранов (ширина экрана от 992px и выше) */
-@media (min-width: 992px) {
-
-  .swiper-wrapper {
-    max-width: calc(460px * 2); /* Увеличиваем максимальную ширину swiper-wrapper */
-    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr)); /* Изменяем ширину колонок в swiper-wrapper */
-
-  }
-}
-
-@media (min-width: 1480px) {
-  .swiper-wrapper {
-    max-width: calc(460px * 3);
-  }
-}
-
-.team-member-card:nth-child(1) {
-  background-image: linear-gradient(to bottom, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to left, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to right, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to top, black, transparent, transparent, transparent, transparent, transparent),
-  url('../img/profiles/MaksimSobolev.JPG');
-}
-
-.team-member-card:nth-child(2) {
-  background-image: linear-gradient(to bottom, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to left, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to right, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to top, black, transparent, transparent, transparent, transparent, transparent),
-  url('../img/profiles/AnnaTarasova.jpg');
-}
-
-.team-member-card:nth-child(3) {
-  background-image: linear-gradient(to bottom, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to left, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to right, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to top, black, transparent, transparent, transparent, transparent, transparent),
-  url('../img/profiles/DenisNenastin.jpg');
-}
-
-.team-member-card:nth-child(4) {
-  background-image: linear-gradient(to bottom, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to left, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to right, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to top, black, transparent, transparent, transparent, transparent, transparent),
-  url('../img/profiles/VladislavGuschin.jpg');
-  background-position: top;
-}
-
-.team-member-card:nth-child(5) {
-  background-image: linear-gradient(to bottom, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to left, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to right, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to top, black, transparent, transparent, transparent, transparent, transparent),
-  url('../img/profiles/OlesyaPankova.jpg');
-}
-
-.team-member-card:nth-child(6) {
-  background-image: linear-gradient(to bottom, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to left, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to right, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to top, black, transparent, transparent, transparent, transparent, transparent),
-  url('../img/profiles/AlyonaFilipova.JPG');
-  background-position: top;
-}
-
-.team-member-card:nth-child(7) {
-  background-image: linear-gradient(to bottom, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to left, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to right, black, transparent, transparent, transparent, transparent, transparent),
-  linear-gradient(to top, black, transparent, transparent, transparent, transparent, transparent),
-  url('../img/profiles/KirillGorshenichev.jpg');
-}
-
-/*.team-member-card img{
-  width: 180px;
-  height: 380px;
-  margin: 20px;
-  object-fit: cover;
-}*/
-
-.team-member-card:hover {
-  transform: scale(1.05); /* Увеличение при наведении */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Увеличенная тень при наведении */
-}
-
-#info {
-
-  width: 100%;
-  height: 100vh; /* Initial full screen height */
-  background-image: url("../img/wJAG4wnz-XY.jpg");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-
-
-}
-
-#info.shrink {
-  height: calc(100vh - 33.33vh); /* Shrink to 2/3 of full screen height */
-}
-
-
-#about .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px;
-}
-
-.camera-section {
-  flex: 0 0 auto;
-}
-
-.camera-img {
-  max-width: 200px;
-  transition: transform 0.5s ease;
-}
-
-
-.info-container {
-  max-width: 1380px;
-  margin: auto;
-  text-align: center;
-  font-size: 32px;
-}
-
-.info-container li {
-  list-style-type: none;
-}
-
+/*
 
 .ring-container {
-  /*position: relative;*/
+  !*position: relative;*!
 }
 
 .ring {
-  /*position: absolute;*/
+  !*position: absolute;*!
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 2px solid #333;
-  border-radius: 50%; /* Делаем круглым */
+  border-radius: 50%; !* Делаем круглым *!
 }
 
 .ring-large {
-  width: 250px; /* Ширина большого кольца */
-  height: 250px; /* Высота большого кольца */
-  top: 50px; /* Отступ от верхней границы */
-  left: 50%; /* Размещаем по центру горизонтально */
+  width: 250px; !* Ширина большого кольца *!
+  height: 250px; !* Высота большого кольца *!
+  top: 50px; !* Отступ от верхней границы *!
+  left: 50%; !* Размещаем по центру горизонтально *!
 
 }
 
 .ring-medium {
-  width: 180px; /* Ширина среднего кольца */
-  height: 180px; /* Высота среднего кольца */
-  top: 160px; /* Отступ от верхней границы */
-  left: 50%; /* Размещаем по центру горизонтально */
+  width: 180px; !* Ширина среднего кольца *!
+  height: 180px; !* Высота среднего кольца *!
+  top: 160px; !* Отступ от верхней границы *!
+  left: 50%; !* Размещаем по центру горизонтально *!
 
 }
 
 .ring-small {
-  width: 110px; /* Ширина маленького кольца */
-  height: 110px; /* Высота маленького кольца */
-  top: 280px; /* Отступ от верхней границы */
-  left: 50%; /* Размещаем по центру горизонтально */
+  width: 110px; !* Ширина маленького кольца *!
+  height: 110px; !* Высота маленького кольца *!
+  top: 280px; !* Отступ от верхней границы *!
+  left: 50%; !* Размещаем по центру горизонтально *!
 
 }
 
 .ring-text {
   font-size: 16px;
 }
-
-#partners .owl-stage-outer {
-  max-width: 1380px;
-  margin: auto;
-}
-
-#partners {
-  justify-content: center;
-  align-items: center;
-
-  margin: 0;
-  background-color: #f0f0f0;
-}
-
-.partner-logos {
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  max-width: 800px;
-}
-
-.logo {
-  width: 150px;
-  height: 150px;
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень по умолчанию */
-}
-
-.logo:hover {
-  transform: scale(1.1); /* Увеличение при наведении */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Увеличенная тень при наведении */
-}
-
-.logo img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-
-}
-
-#reviews {
-  font-family: Arial, sans-serif;
-  background-color: #222; /* Темный фон */
-  color: #fff; /* Белый текст */
-  padding: 20px;
-  text-align: center;
-}
-
-
-.reviews-title {
-  font-size: 24px;
-  color: #ff4d4d; /* Красный цвет для заголовка */
-  margin-bottom: 20px;
-}
-
-.reviews-container {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
-.review {
-  width: 200px;
-  padding: 20px;
-  background-color: #333; /* Темный фон для отзывов */
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-.review:hover {
-  transform: scale(1.1); /* Увеличение при наведении */
-}
-
-.review p {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-/*
-.video-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-}
 */
-
-.video__content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  justify-content: center;
-  max-width: 1380px;
-  margin: auto;
-}
-
-.video__content li {
-  list-style-type: none;
-  max-width: 440px;
-}
-
-.video__content img {
-  max-width: 440px;
-}
-
-
-@media (max-width: 992px) {
-  .video__content {
-    grid-template-columns: repeat(1, 1fr);
-    max-width: calc(440px * 1);
-  }
-
-
-}
-
-/* Медиа-запрос для устройств с шириной экрана от 768px до 1200px (например, планшеты и средние экраны) */
-@media (min-width: 992px) {
-  .video__content {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: calc(440px * 2);
-  }
-}
-
-/* Медиа-запрос для устройств с шириной экрана более 1200px (например, ноутбуки и большие экраны) */
-@media (min-width: 1450px) {
-  .video__content {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: calc(440px * 3);
-  }
-
-  .video__content li {
-
-  }
-}
-
-

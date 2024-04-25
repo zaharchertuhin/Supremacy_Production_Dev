@@ -1,0 +1,52 @@
+
+.video__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  max-width: 1380px;
+  margin: auto;
+}
+
+.video__content li {
+  list-style-type: none;
+  max-width: 440px;
+}
+
+.video__content img {
+  max-width: 440px;
+}
+
+@media (max-width: 768px) {
+  .video__content img{
+    max-width: calc(100vw - 120px);
+  }
+}
+
+@media (max-width: 992px) {
+  .video__content {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: calc(440px * 1);
+  }
+}
+
+/* Медиа-запрос для устройств с шириной экрана от 768px до 1200px (например, планшеты и средние экраны) */
+@media (min-width: 992px) {
+  .video__content {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: calc(440px * 2);
+  }
+}
+
+/* Медиа-запрос для устройств с шириной экрана более 1200px (например, ноутбуки и большие экраны) */
+@media (min-width: 1450px) {
+  .video__content {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: calc(440px * 3);
+  }
+
+  .video__content li {
+
+  }
+}
+

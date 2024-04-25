@@ -1,0 +1,70 @@
+.contact-form-container {
+  background-color: #4E4E50;
+  padding: 40px;
+  border-radius: 8px;
+  width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container {
+  margin: auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Общие стили для всех input-полей и textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #4E4E50;
+  border-bottom: 1px solid #6F2232;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.01); /* Прозрачный фон */
+  color: #FFFFFF;
+}
+
+/* Отступы для input-полей */
+input[type="text"],
+input[type="email"],
+textarea {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background-color: #950740;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #C3073F;
+}
+
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    max-width: calc(100vw - 60px);
+    width: auto;
+  }
+}
