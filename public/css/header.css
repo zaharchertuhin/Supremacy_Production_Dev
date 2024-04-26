@@ -70,10 +70,8 @@ nav a {
 
   position: fixed;
   width: 100%;
-
   color: #000;
-  opacity: 0.85;
-
+  opacity: 0.95;
   z-index: 12;
 }
 
@@ -227,7 +225,7 @@ nav a {
 
   .navbar .menu-items li {
     margin-bottom: 2.5rem;
-    font-size: 1.8rem;
+    font-size: 32px;
     font-weight: 500;
   }
 }

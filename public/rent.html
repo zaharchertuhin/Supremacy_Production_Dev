@@ -1,9 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="" lang="ru-RU">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Rent</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SUPREMACY</title>
   <link rel="stylesheet" href="css/style.css">
+  <!--<link rel="stylesheet" href="css/info.css">-->
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/header.css">
+
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -24,32 +30,73 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-
-
   <link rel="stylesheet" href="videotube/videotube.min.css">
   <script src="videotube/videotube.min.js"></script>
-
-  <!--  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">-->
-
 
 </head>
 
 <body>
 
 <header class="header">
-  <a href="./index.html">
+  <a class="main" href="index.html#info">
     <img src="img/logo.png" alt="Logo" class="Hlogo">
   </a>
-  <div class="navigation">
-    <nav>
-      <ul>
-        <li><a href="rent.html">Аренда</a></li>
-        <li><a href="./index.html#portfolio">Портфолио</a></li>
-        <li><a href="./index.html#contact">Контакты</a></li>
+
+  <nav class="navbar">
+    <div class="navbar-container container">
+      <label for="check"></label><input type="checkbox" name="" id="check">
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul class="menu-items">
+        <li><a id="rent" href="rent.html">Аренда</a></li>
+        <li><a id="portf" href="index.html#portfolio">Портфолио</a></li>
+        <li><a id="cont" href="index.html#contact">Контакты</a></li>
       </ul>
-    </nav>
-  </div>
+
+    </div>
+  </nav>
 </header>
+
+<div class="container">
+  <section id="about">
+    <h2>Аренда студии</h2>
+
+    <div class="container">
+
+      <div class="info-container">
+        <p>Наша студия располагается в центре Нижнего Новгорода</p>
+        <p>мы предоставляем в аренду помещение с большим парком топового оборудования и возможностью постройки декораций для видеосъемок.</p>
+
+        <ul>Наше пространство можно использовать для:
+          <li>Съемки интервью и подкастов</li>
+          <li>Предметных съемок</li>
+          <li>Постройки декораций</li>
+          <li>Проведение воркшопов</li>
+        </ul>
+
+        <p>Также мы предоставляем услуги видеосъемки нашими специалистами на профессиональное оборудование, запись звука, монтаж видеороликов.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h1>Rent Equipment List</h1>
+    <div id="container"></div>
+
+
+  </section>
+
+</div>
+
+<footer>
+  <p>Made by <a href="https://t.me/WIXBY">WIXBY</a></p>
+</footer>
+
+<script src="rent.js"></script>
 
 </body>
 </html>

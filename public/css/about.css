@@ -27,7 +27,9 @@
 }
 
 .info-container li {
+  margin-top: 10px;
   list-style-type: none;
+  text-shadow: red 1px 0 10px;
 }
 
 .info-container ul {
@@ -35,6 +37,11 @@
 }
 
 @media (max-width: 500px) {
+
+  .info-container {
+    font-size: 24px;
+  }
+
   .camera-section{
     display: none;
   }
