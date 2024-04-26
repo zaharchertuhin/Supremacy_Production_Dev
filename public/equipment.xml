@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <div class="equip-title">
+    <h3>Камеры</h3>
+  </div>
+  <div class="equip-item">
+    <name>BLACKMAGIC DESIGN POCKET CINEMA CAMERA 4K</name>
+    <price>2500/5000смена</price>
+  </div>
+  <div class="equip-item">
+    <name>Fujifilm xt 4</name>
+    <price>2000/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>panasonic gh 5</name>
+    <price>1200/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>panasonic gh 3</name>
+    <price>800/смена</price>
+  </div>
+  <div class="equip-title">
+    <h3>Объективы</h3>
+  </div>
+  <div class="equip-item">
+    <name>panasonic 25 mm 1.4</name>
+    <price>500/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>fujinon 16-80</name>
+    <price>1000/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>panasonic 12-35 2.8 v1</name>
+    <price>1200/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>sigma 18-35 1.2</name>
+    <price>1500/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>belomo 8 mm 3.2</name>
+    <price>1000/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>canon 8mm 2.8</name>
+    <price>500/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>Tokina 11-16  2.8</name>
+    <price>800/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>Gellios 44mm </name>
+    <price></price>
+  </div>
+  <div class="equip-title">
+    <h3>Световые приборы</h3>
+  </div>
+  <div class="equip-item">
+    <name>Aputure Nova 300c</name>
+    <price>3500/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>Aputure 300d Mk2</name>
+    <price>2000/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>Aputure 300d Mk1</name>
+    <price>1500/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>Aputure 120d Mk2</name>
+    <price>1000/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>Aputure Amaran 300C</name>
+    <price>2000/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>Aputure Amaran 300C</name>
+    <price>2000/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>AMBITFUL A2 RGB 2500-8500K RGB</name>
+    <price>1000/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>(растры + кейс) 30 см</name>
+    <price></price>
+  </div>
+  <div class="equip-item">
+    <name>AMBITFUL A2 RGB 2500-8500K RGB</name>
+    <price>1000/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>(растры + кейс) 30 см</name>
+    <price></price>
+  </div>
+  <div class="equip-item">
+    <name>AMBITFUL A2 pro RGB 2500-8500K RGB</name>
+    <price>350/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>(растры + кейс) 60 см</name>
+    <price></price>
+  </div>
+  <div class="equip-item">
+    <name>Ulanzi VL49, 6 Вт, 2000 мАч, 5500K</name>
+    <price>200/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>Ulanzi VL49, 6 Вт, 2000 мАч RGB</name>
+    <price>200/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>Панели Led 60w</name>
+    <price>200/смена</price>
+  </div>
+  <div class="equip-title">
+    <h3>Штативы, стойки, гриповка</h3>
+  </div>
+  <div class="equip-item">
+    <name>Boom GreenBean Titan 216 BRC22</name>
+    <price>500/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>C Stand 2.6m</name>
+    <price>200/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>C Stand 2.6m</name>
+    <price>200/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>C Stand 2.6m</name>
+    <price>200/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>Kupo Low Boy</name>
+    <price>250/смен</price>
+  </div>
+  <div class="equip-item">
+    <name>стойка для камеры</name>
+    <price>500/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>sand bag</name>
+    <price>150/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>штативы для камер</name>
+    <price>500/смена</price>
+  </div>
+  <div class="equip-title">
+    <h3>Аксессуары</h3>
+  </div>
+  <div class="equip-item">
+    <name>стабилизатор moza air cross 2</name>
+    <price>1800/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>tilta nucleus nano  Радио-фокусировка</name>
+    <price>1000/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>Накамерный монитор</name>
+    <price>1000/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>Видеосендер Acssoon se (Hdmi-sdi) 4 абонента </name>
+    <price>2000/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>ssd samsung t7</name>
+    <price>700/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>ssd samsung t7</name>
+    <price>700/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>EasyRig  FlyCam до 10кг</name>
+    <price>1500/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>Ronin rs 2 pro</name>
+    <price>2500/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>Tilta ring</name>
+    <price>1000/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>Площадка питания </name>
+    <price>150/смена </price>
+  </div>
+  <div class="equip-item">
+    <name>V-mount 285w</name>
+    <price>800/смена </price>
+  </div>
+  <div class="equip-item">
+    <name>Np-f</name>
+    <price>150/смена</price>
+  </div>
+  <div class="equip-item">
+    <name>клетка tilta</name>
+    <price>200</price>
+  </div>
+  <div class="equip-item">
+    <name>ручка focus tilta</name>
+    <price>500</price>
+  </div>
+  <div class="equip-item">
+    <name>ручка tilta</name>
+    <price>800</price>
+  </div>
+  <div class="equip-item">
+    <name>дым машина 500w</name>
+    <price>800</price>
+  </div>
+  <div class="equip-item">
+    <name>отражатель 4 в одном</name>
+    <price>150</price>
+  </div>
+  <div class="equip-item">
+    <name>отражатель 4 в одном</name>
+    <price>150</price>
+  </div>
+  <div class="equip-item">
+    <name>Софтбокс AMBUTFUL 90 см</name>
+    <price>1500</price>
+  </div>
+  <div class="equip-item">
+    <name>Стрип Бокс AMBUTFUL 30 120 с сотами</name>
+    <price>500</price>
+  </div>
+  <div class="equip-item">
+    <name>Стрип Бокс godox 30 120 с сотами</name>
+    <price>500</price>
+  </div>
+  <div class="equip-item">
+    <name>линза френеля</name>
+    <price>200</price>
+  </div>
+  <div class="equip-item">
+    <name>линза френеля</name>
+    <price>200</price>
+  </div>
+  <div class="equip-item">
+    <name>hdmi</name>
+    <price>100</price>
+  </div>
+  <div class="equip-item">
+    <name>hdmi</name>
+    <price>100</price>
+  </div>
+  <div class="equip-item">
+    <name>hdmi</name>
+    <price>100</price>
+  </div>
+  <div class="equip-item">
+    <name>хромакей 6х3 m</name>
+    <price>500</price>
+  </div>
+
+</root>
