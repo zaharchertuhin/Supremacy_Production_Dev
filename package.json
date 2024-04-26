@@ -1,5 +1,5 @@
 {
-  "name": " ",
+  "name": "Supremacy",
   "version": "0.0.1",
   "description": "",
   "private": true,
@@ -31,6 +31,7 @@
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security",
     "node-fetch": "^3.3.2",
-    "node-telegram-bot-api": "^0.65.1"
+    "node-telegram-bot-api": "^0.65.1",
+    "owl.carousel": "^2.3.4"
   }
 }

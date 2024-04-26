@@ -1,9 +1,5 @@
 require('dotenv').config(); // Подключаем dotenv
 
-
-const csv = require('csv-parser');
-const fs = require('fs');
-
 const TelegramBot = require('node-telegram-bot-api');
 const express = require('express');
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));

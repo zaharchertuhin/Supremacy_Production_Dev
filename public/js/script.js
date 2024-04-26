@@ -107,6 +107,20 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+const cards = [...document.querySelectorAll(".team-member-card")];
+
+cards.forEach(el => {
+  el.addEventListener("mousemove", fCardRotate);
+  el.addEventListener("mouseout", fCardDefault);
+});
+
+function fCardRotate(ev) {
+  this.style.transform = `perspective(2000px) rotatey(${(ev.offsetX - this.offsetWidth / 2) / 8}deg) rotatex(${((ev.offsetY - this.offsetHeight / 2) / 8) * -1}deg)`;
+}
+function fCardDefault() {
+  this.style.transform = ``;
+}
+
 /*
 
 let minSize=150,

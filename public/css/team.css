@@ -2,7 +2,7 @@
   display: flex;
   padding: 20px;
   max-width: 380px;
-  /*background-color: #950740;*/
+  transform: perspective(1000px) rotatey(0deg) rotatex(0deg);
   border-radius: 10px;
   width: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -29,24 +29,16 @@
   }
 }
 
-/* Медиа-запрос для устройств среднего размера (например, планшетов) */
 @media (min-width: 768px) {
-
-
   .swiper-wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr)); /* Изменяем ширину колонок в swiper-wrapper */
-
+    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
   }
 }
 
-
-/* Медиа-запрос для настольных компьютеров и больших экранов (ширина экрана от 992px и выше) */
 @media (min-width: 992px) {
-
   .swiper-wrapper {
-    max-width: calc(460px * 2); /* Увеличиваем максимальную ширину swiper-wrapper */
-    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr)); /* Изменяем ширину колонок в swiper-wrapper */
-
+    max-width: calc(460px * 2);
+    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
   }
 }
 
