@@ -15,4 +15,7 @@
     <orderEntry type="library" name="jquery-latest" level="application" />
     <orderEntry type="library" name="jquery-3.6.0" level="application" />
   </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="7f06b1c6-9b8a-447f-a280-7272c22719f0" />
+  </component>
 </module>
