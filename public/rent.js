@@ -1,9 +1,9 @@
 window.onload = function() {
   // Создаем объект XMLHttpRequest
-  var xhttp = new XMLHttpRequest();
+  const xhttp = new XMLHttpRequest();
 
   // Открываем запрос на получение данных из файла
-  xhttp.open("GET", "equipment.xml", true);
+  xhttp.open("GET", "data", true);
 
   // Устанавливаем обработчик события загрузки
   xhttp.onload = function() {
