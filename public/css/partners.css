@@ -76,3 +76,12 @@
   transition: opacity .2s ease;
   border-radius: 30px;
 }
+
+
+@media (max-width: 500px) {
+  .logo {
+    width: 70vw;
+    height: 70vw;
+    margin: auto;
+  }
+}

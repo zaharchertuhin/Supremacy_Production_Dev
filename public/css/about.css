@@ -1,14 +1,11 @@
 #about .container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 50px;
-
 }
 
 .camera-section {
   flex: 0 0 auto;
-  position: absolute;
+
   left: 100px;
   top: 0;
 }
@@ -18,12 +15,12 @@
   transition: transform 0.5s ease;
 }
 
-
 .info-container {
-  max-width: 1150px;
-  margin: auto;
+  max-width:  1540px;
+  margin: 0 auto;
+
   text-align: center;
-  font-size: 32px;
+  font-size: 48px;
 }
 
 .info-container li {
@@ -44,5 +41,26 @@
 
   .camera-section{
     display: none;
+  }
+}
+
+@media (min-width: 501px) {
+  .info-container {
+    width:  calc(100vw - 260px);
+    padding: 0 30px;
+  }
+
+  .left-paragraph {
+    text-align: left;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-right: auto;
+  }
+
+  .right-paragraph {
+    text-align: right;
+    margin-bottom: 50px;
+    max-width: 600px;
+    margin-left: auto;
   }
 }
