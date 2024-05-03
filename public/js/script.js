@@ -121,21 +121,16 @@ function fCardDefault() {
   this.style.transform = ``;
 }
 
-/*
 
 let minSize=150,
-  el=document.querySelector('#info'),
+  el=document.querySelector('#video-back'),
   page=document.querySelector('html'),
   height={
     el:el.offsetHeight-minSize,
     page:500
   }
 document.addEventListener('scroll',()=>{
-  let st=page.scrollTop
-  if(st>=height.page) return
-  let percent=height.page/st,
-    value=height.el/percent
-  el.style.height=height.el-value+minSize+'px'
+  let top=page.scrollTop;
+  el.style.opacity= 1- (top > 500 ? 1 : top * 2 / 1000);
 })
-*/
 

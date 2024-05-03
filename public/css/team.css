@@ -111,6 +111,20 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Увеличенная тень при наведении */
 }
 
+.team-member-info{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
+
+.team-member-info h3{
+  width: 100%;
+}
+
+.team-member-text{
+  width: 100%;
+}
+
 @media (max-width: 500px) {
   .swiper-wrapper {
     grid-template-columns: repeat(auto-fill, minmax(calc(100vw - 60px), 1fr));

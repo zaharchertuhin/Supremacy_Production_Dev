@@ -4,10 +4,8 @@
 }
 
 .camera-section {
-  flex: 0 0 auto;
-
-  left: 100px;
-  top: 0;
+  align-items: center;
+  display: flex;
 }
 
 .camera-img {
@@ -60,6 +58,11 @@
   .right-paragraph {
     text-align: right;
     margin-bottom: 50px;
+display: flex;
+
+  }
+
+  .right-paragraph p {
     max-width: 600px;
     margin-left: auto;
   }
