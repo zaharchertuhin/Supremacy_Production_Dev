@@ -74,7 +74,7 @@ const repeatedText = (new Array(repeatCount)).fill(marqueeText.textContent).join
 marqueeText.textContent = repeatedText + ' | ';
 marqueeText2.textContent = repeatedText;
 
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener('scroll', function() {
     const cameraImg = document.querySelector('.camera-img');
     const scrollPosition = window.scrollY;
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Задаем угол поворота картинки кинокамеры в зависимости от скролла страницы
     cameraImg.style.transform = `rotate(${scrollPosition / 20 - 50}deg)`;
   });
-});
+});*/
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -121,7 +121,6 @@ function fCardDefault() {
   this.style.transform = ``;
 }
 
-
 let minSize=150,
   el=document.querySelector('#video-back'),
   page=document.querySelector('html'),
@@ -133,4 +132,17 @@ document.addEventListener('scroll',()=>{
   let top=page.scrollTop;
   el.style.opacity= 1- (top > 500 ? 1 : top * 2 / 1000);
 })
+
+const videos = document.querySelectorAll('.info_video');
+
+videos.forEach(video => {
+  video.addEventListener('mouseenter', () => {
+    video.play();
+  });
+
+  video.addEventListener('mouseleave', () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+});
 
