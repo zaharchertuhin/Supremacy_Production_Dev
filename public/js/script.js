@@ -115,7 +115,7 @@ cards.forEach(el => {
 });
 
 function fCardRotate(ev) {
-  this.style.transform = `perspective(2000px) rotatey(${(ev.offsetX - this.offsetWidth / 2) / 8}deg) rotatex(${((ev.offsetY - this.offsetHeight / 2) / 8) * -1}deg)`;
+  this.style.transform = `perspective(2000px) rotatey(${(ev.offsetX - this.offsetWidth / 2) / 10}deg) rotatex(${((ev.offsetY - this.offsetHeight / 2) / 8) * -1}deg)`;
 }
 function fCardDefault() {
   this.style.transform = ``;
