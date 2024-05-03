@@ -1,67 +1,31 @@
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-  e.preventDefault();
+<!--<div class="info-container">
 
-  let name = document.querySelector('input[name="name"]').value;
-  let email = document.querySelector('input[name="email"]').value;
-  let message = document.querySelector('textarea[name="message"]').value;
+        <div class="left-paragraph">
+          <p>Мы собрали креативную команду профессионалов, горящих своим делом.</p>
+        </div>
 
-  // Отправляем данные формы на сервер
-  fetch('/submit-form', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ name, email, message }),
-  })
-    .then(response => {
-      if (response.ok) {
-        alert('Спасибо! Ваше сообщение отправлено.');
-        document.getElementById('contactForm').reset();
-      } else {
-        throw new Error('Ошибка при отправке формы.');
-      }
-    })
-    .catch(error => {
-      console.error('Ошибка:', error);
-      alert('Произошла ошибка. Попробуйте еще раз позже.');
-    });
-});
+        <div class="right-paragraph">
+          <div class="camera-section">
+            <img src="/img/cinema.png" alt="Кинокамера" class="camera-img">
+          </div>
+          <p>Ежедневно мы развиваемся и улучшаем наши навыки, чтобы обеспечить вас высоким качеством
+          производства
+          контента.</p>
+        </div>
+        <div class="left-paragraph">
+          <p>Мы предоставляем услуги создания видео полного цикла. от разработки идеи и сценария до
+          полной реализации
+          проекта.
+        </p>
+        </div>
+        <div class="center">
+          <ul>В нашу специализацию входят:
+            <li>Рекламные ролики</li>
+            <li>Проморолики</li>
+            <li>Музыкальные клипы</li>
+            <li>Концертные съемки</li>
+          </ul>
+        </div>
 
-const express = require('express');
-const fetch = require('node-fetch');
-const bodyParser = require('body-parser');
-
-const app = express();
-const port = 3000;
-
-app.use(bodyParser.json());
-
-app.post('/submit-form', (req, res) => {
-  const { name, email, message } = req.body;
-
-  // Отправляем сообщение в Telegram
-  const telegramToken = 'YOUR_TELEGRAM_BOT_TOKEN';
-  const chatId = 'YOUR_TELEGRAM_CHAT_ID';
-  const text = `Новое сообщение от ${name} (${email}):\n${message}`;
-
-  fetch(`https://api.telegram.org/bot${telegramToken}/sendMessage`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ chat_id: chatId, text }),
-  })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Сообщение успешно отправлено в Telegram:', data);
-      res.sendStatus(200);
-    })
-    .catch(error => {
-      console.error('Ошибка при отправке сообщения в Telegram:', error);
-      res.sendStatus(500);
-    });
-});
-
-app.listen(port, () => {
-  console.log(`Сервер запущен на порту ${port}`);
-});
+      </div>
+-->

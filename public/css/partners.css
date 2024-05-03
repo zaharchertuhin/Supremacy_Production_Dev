@@ -44,29 +44,29 @@
 
 }
 
-.owl-nav{
+#partners .owl-nav{
   justify-content: center;
   display: flex;
 }
 
-.owl-nav button{
+#partners .owl-nav button{
   margin: 0 30px;
 }
 
-.owl-nav span{
+#partners .owl-nav span{
   font-size: 45px;
 }
 
-.owl-nav span:hover{
+#partners .owl-nav span:hover{
   text-shadow: white 1px 0 10px;
   transition: text-shadow 0.3s ease;
 }
 
-.owl-dot{
+#partners .owl-dot{
   display: inline-block;
 }
 
-.owl-nav .owl-dots span{
+#partners .owl-nav .owl-dots span{
   width: 10px;
   height: 10px;
   margin: 5px 7px;

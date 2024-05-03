@@ -71,8 +71,12 @@
   margin: 0 auto;
 }
 
-.video-item:nth-child(2n){
-  padding-top: 20%;
+#about .owl-item:nth-child(2n){
+  padding-top: 100px;
+}
+
+#about .disabled{
+  display: none;
 }
 
 .video-item {
@@ -84,6 +88,7 @@
   width: 100%;
   height: auto;
   border-radius: 10px;
+  border: white 1px solid;
 }
 
 .info-video-text{
@@ -101,7 +106,7 @@
   display: inline-block;
 }
 
-.tooltip .tooltiptext {
+.tooltip .tool-tip-text {
   font-size: 20px;
   visibility: hidden;
   width: 120px;
@@ -110,13 +115,17 @@
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
-
-  /* Position the tooltip */
   position: absolute;
   z-index: 1;
+  top: 70px;
+  transform: translateX(-100%);
 }
 
-.tooltip:hover .tooltiptext {
-  transform: translateX(-100%);
+.tooltip:hover .tool-tip-text {
+
   visibility: visible;
+}
+
+#about .owl-stage{
+  display: flex;
 }

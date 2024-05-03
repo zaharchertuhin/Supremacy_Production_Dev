@@ -42,7 +42,7 @@ const csvParser = require('csv-parser');
 app.get('/data', (req, res) => {
   let data = [];
 
-  fs.createReadStream('equipment.csv')
+  fs.createReadStream('server/equipment.csv')
     .pipe(csvParser({ separator: ';' }))
     .on('data', (row) => {
       data.push(row);
@@ -50,21 +50,26 @@ app.get('/data', (req, res) => {
     .on('end', () => {
       // Once all data is read from the CSV file
       // render it in a simple HTML table
-      let tableHtml = '<table border="1">';
+      let tableHtml = '<table>';
       tableHtml += '<tr><th>Name</th><th>Price</th></tr>';
       data.forEach((row) => {
-
-        tableHtml += `<tr><td>${row.name}</td><td>${row.description}</td></tr>`;
-
+        if(row.name === ""){
+          /*tableHtml += '</table>';*/
+          tableHtml += `<td class="table_title" colspan="2">${row.description}</td>`;
+          /*tableHtml += '<table border="1">';*/
+        }
+        else {
+          tableHtml += `<tr><td>${row.name}</td><td>${row.description}</td></tr>`;
+        }
       });
       tableHtml += '</table>';
 
-      const html = `<div class="csv_data">
-          ${tableHtml}
-        </div>`;
-
+      const html = `
+            <div class="csv_data">
+              ${tableHtml}
+            </div>
+      `;
       res.send(html);
-
     });
 });
 

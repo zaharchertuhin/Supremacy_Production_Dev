@@ -1,3 +1,18 @@
 table {
-  margin: auto;
+  margin: 20px auto;
+}
+
+#rent_list{
+  text-align: center;
+}
+
+.csv_data td{
+  width: 30vw;
+  padding: 10px 0;
+  font-size: 28px;
+}
+
+.csv_data .table_title, .csv_data th{
+  font-size: 36px;
+  padding: 20px 0;
 }

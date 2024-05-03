@@ -99,7 +99,7 @@
 
         <h2>Специализация</h2>
 
-        <div class="video-block">
+        <div class="owl-carousel-2 ">
           <div class="video-item">
             <video class="info_video" width="300px" muted loop>
               <source src="video/DJI.mp4" type="video/mp4">
@@ -111,7 +111,7 @@
                 <button class="tooltip-toggle" type="button">
                   ?
                 </button>
-                <span class="tooltiptext">Tooltip text</span>
+                <span class="tool-tip-text">Tooltip text</span>
               </div>
             </div>
           </div>
@@ -127,7 +127,7 @@
                 <button class="tooltip-toggle" type="button">
                   ?
                 </button>
-                <span class="tooltiptext">Tooltip text</span>
+                <span class="tool-tip-text">Tooltip text</span>
               </div>
             </div>
           </div>
@@ -142,7 +142,7 @@
                 <button class="tooltip-toggle" type="button">
                   ?
                 </button>
-                <span class="tooltiptext">Tooltip text</span>
+                <span class="tool-tip-text">Tooltip text</span>
               </div>
             </div>
           </div>
@@ -157,7 +157,52 @@
                 <button class="tooltip-toggle" type="button">
                   ?
                 </button>
-                <span class="tooltiptext">Tooltip text</span>
+                <span class="tool-tip-text">Tooltip text</span>
+              </div>
+            </div>
+          </div>
+          <div class="video-item">
+            <video  class="info_video" width="300px"  muted loop>
+              <source src="video/DJI.mp4" type="video/mp4">
+              <source src="video/DJI.ogv" type="video/ogg">
+            </video>
+            <div class="info-video-text">
+              <p class="caption">Video</p>
+              <div class="tooltip">
+                <button class="tooltip-toggle" type="button">
+                  ?
+                </button>
+                <span class="tool-tip-text">Tooltip text</span>
+              </div>
+            </div>
+          </div>
+          <div class="video-item">
+            <video  class="info_video" width="300px"  muted loop>
+              <source src="video/DJI.mp4" type="video/mp4">
+              <source src="video/DJI.ogv" type="video/ogg">
+            </video>
+            <div class="info-video-text">
+              <p class="caption">Video</p>
+              <div class="tooltip">
+                <button class="tooltip-toggle" type="button">
+                  ?
+                </button>
+                <span class="tool-tip-text">Tooltip text</span>
+              </div>
+            </div>
+          </div>
+          <div class="video-item">
+            <video  class="info_video" width="300px"  muted loop>
+              <source src="video/DJI.mp4" type="video/mp4">
+              <source src="video/DJI.ogv" type="video/ogg">
+            </video>
+            <div class="info-video-text">
+              <p class="caption">Video</p>
+              <div class="tooltip">
+                <button class="tooltip-toggle" type="button">
+                  ?
+                </button>
+                <span class="tool-tip-text">Tooltip text</span>
               </div>
             </div>
           </div>
@@ -165,37 +210,28 @@
 
       </div>
 
-      <!--<div class="info-container">
+      <script>
+        $(document).ready(function(){
+          $(".owl-carousel-2").owlCarousel({
+            loop: true,
+            margin: 20,
+            nav: false,
+            dots: false,
+            responsive:{
+              0:{
+                items:1
+              },
+              600:{
+                items:2
+              },
+              1000:{
+                items:4
+              }
+            }
+          });
+        });
+      </script>
 
-        <div class="left-paragraph">
-          <p>Мы собрали креативную команду профессионалов, горящих своим делом.</p>
-        </div>
-
-        <div class="right-paragraph">
-          <div class="camera-section">
-            <img src="/img/cinema.png" alt="Кинокамера" class="camera-img">
-          </div>
-          <p>Ежедневно мы развиваемся и улучшаем наши навыки, чтобы обеспечить вас высоким качеством
-          производства
-          контента.</p>
-        </div>
-        <div class="left-paragraph">
-          <p>Мы предоставляем услуги создания видео полного цикла. от разработки идеи и сценария до
-          полной реализации
-          проекта.
-        </p>
-        </div>
-        <div class="center">
-          <ul>В нашу специализацию входят:
-            <li>Рекламные ролики</li>
-            <li>Проморолики</li>
-            <li>Музыкальные клипы</li>
-            <li>Концертные съемки</li>
-          </ul>
-        </div>
-
-      </div>
--->
     </div>
   </section>
 
