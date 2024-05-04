@@ -9,7 +9,11 @@
 }
 
 #info.shrink {
-  height: calc(100vh - 33.33vh); /* Shrink to 2/3 of full screen height */
+  height: calc(100vh - 33.33vh);
+}
+
+#about p{
+  font-family: 'Roboto', sans-serif!important;
 }
 
 .video-bg {
@@ -33,6 +37,7 @@
 .video-bg-content {
   z-index: 2;
   font-size: 40px;
+  margin-left: 20px;
 }
 
 #info h1 {

@@ -16,8 +16,6 @@ D
 public/equipment.xml,7\6\7601a2560698789fe719872df0e74a1f51df06c9
 4
 .env,3\c\3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
->
-public/rent.js,0\9\09534a388e193e5d2ec74193e771bcfdf1399a68
 A
 public/index.html,f\4\f43ecdf8d666ee908aacce037b4cd72159e4741b
 F

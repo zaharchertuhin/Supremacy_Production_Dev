@@ -30,8 +30,6 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     });
 });
 
-
-
 let lastScroll = 0;
 const defaultOffset = 0;
 const header = document.querySelector('.header');
